@@ -1,0 +1,9 @@
+def fibnac(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    total=fibnac(n-1)+fibnac(n-2)
+    return total
+n=int(input("enter the number :"))
+print(fibnac(n))
