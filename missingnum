@@ -1,0 +1,10 @@
+def missingnum(arr):
+    n=len(arr)
+    n=n+1
+    total_sum=(n*(n+1))//2
+    sum=0https://www.onlinegdb.com/online_python_compiler#editor_1
+    for i  in range(len(arr)):
+        sum+=arr[i]
+    return total_sum-sum
+arr=[1,2,4,5,6 ]
+print(missingnum(arr))
