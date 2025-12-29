@@ -1,0 +1,15 @@
+class node:
+    def __init__(self,val):
+        self.val=val
+        self.next=None
+        
+def iterate(head):
+    temp=head
+    while temp!=None:
+        print(temp.val,end=" ")
+        temp=temp.next
+    
+head=node(5)
+head.next=node(10)
+head.next.next=node(4)
+iterate(head)
